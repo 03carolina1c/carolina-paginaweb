@@ -36,17 +36,25 @@
             margin: 0 auto;
             padding: 16px; 
             box-sizing: border-box;
-
         }
-        img{
+
+        img {
             width: 80px;
             height: 80px; 
-            
         }
 
         main h2 {
             color: rgb(255, 0, 119);
             margin-top: 0;
+        }
+
+        /* Regras adicionadas */
+        p {
+            font-weight: bold;
+        }
+
+        .artigo-autor {
+            font-weight: bold;
         }
     </style>
 </head>
@@ -60,10 +68,12 @@
 
     <main> 
         <img src="imagem - blog.png" alt="Ícone do blog Maquiagem e Beleza em tons de rosa com design minimalista">
-        <article>
+        
+        <div>
             <h2>Meu primeiro post</h2>
-            <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de como fazer a maquiagem perfeita e dicas de beleza.</p>
-        </article>
+            <p class="artigo-autor">Por: Marcelo Paludetto</p>
+            <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar dicas de programação e curiosidades da área de tecnologia.</p>
+        </div>
     </main>
 
 </body>
