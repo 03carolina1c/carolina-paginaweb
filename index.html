@@ -63,6 +63,7 @@
             background-color: #f0f0f0;
             border: 1px solid #ccc;
             border-radius: 4px;
+            margin-right: 8px; /* Adicionado um espaço entre os botões */
         }
     </style>
 </head>
@@ -79,15 +80,30 @@
         <h2>Meu primeiro post</h2>
         <p>Por: Carol borges</p>
         <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar conhecimentos de beleza e maquiagem</p>
-        <button>👍 <span>0</span></button>
+        
+        <!-- Botão de Joinha -->
+        <button id="botao-like">👍 <span>0</span></button>
+        
+        <!-- Botão de Coração -->
+        <button id="botao-heart">❤️ <span>0</span></button>
     </main>
     <script>
-        const botao = document.querySelector("button");
-        botao.addEventListener("click", botaoClicado);
+        // Seleciona o botão de joinha
+        const botaoLike = document.querySelector("#botao-like");
+        botaoLike.addEventListener("click", clicarLike);
 
-        function botaoClicado(){
-            console.log("fui clicado");
-            let texto = botao.querySelector("span");
+        function clicarLike(){
+            let texto = botaoLike.querySelector("span");
+            let contador = Number(texto.textContent);
+            texto.textContent = contador + 1;
+        }
+
+        // Seleciona o botão de coração
+        const botaoHeart = document.querySelector("#botao-heart");
+        botaoHeart.addEventListener("click", clicarHeart);
+
+        function clicarHeart(){
+            let texto = botaoHeart.querySelector("span");
             let contador = Number(texto.textContent);
             texto.textContent = contador + 1;
         }
