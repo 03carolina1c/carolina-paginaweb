@@ -65,7 +65,6 @@
             border: 1px solid #ccc;
             border-radius: 4px;
             margin-right: 8px;
-            /* Adicionado um espaço entre os botões */
         }
     </style>
 </head>
@@ -76,53 +75,54 @@
         <p>Vou compartilhar conhecimentos de beleza e maquiagem.</p>
     </header>
     <main>
+        <!-- Primeiro Post -->
+        <article>
+            <img src="imagem - blog.png" alt="No centro do circulo, um desenho em linhas finas e elegantes combinando um olho marcante com cilios volumosos e um delineado bem definido, cruzado delicadamente por um pincel de maquiagem na diagonal">
+            <h2>Meu primeiro post</h2>
+            <p>Por: Carol borges</p>
+            <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar conhecimentos de beleza e maquiagem</p>
 
-        <img src="imagem - blog.png" alt="No centro do circulo, um desenho em linhas finas e elegantes combinando um olho marcante
-        com cilios volumosos e um delineado bem definido, cruzado delicadamente por um pincel de maquiagem
-        na diagonal">
-        <h2>Meu primeiro post</h2>
-        <p>Por: Carol borges</p>
-        <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar conhecimentos de beleza e maquiagem</p>
+            <!-- Botões Post 1 -->
+            <button id="botao-like-1">👍 <span>0</span></button>
+            <button id="botao-heart-1">🩷​ <span>0</span></button>
+        </article>
 
-        <!-- Botão de Joinha -->
-        <button id="botao-like">👍 <span>0</span></button>
+        <hr style="margin: 20px 0; border: 0; border-top: 1px solid #ccc;">
 
-        <!-- Botão de Coração -->
-        <button id="botao-heart">🩷​ <span>0</span></button>
+        <!-- Segundo Post -->
+        <article>
+            <img src="imagem - blog.png" alt="No centro do circulo, um desenho em linhas finas e elegantes combinando um olho marcante com cilios volumosos e um delineado bem definido, cruzado delicadamente por um pincel de maquiagem na diagonal">
+            <h2>Meu segundo post</h2>
+            <p>Por: Carol borges</p>
+            <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar conhecimentos de beleza e maquiagem</p>
 
-        img src="imagem - blog.png" alt="No centro do circulo, um desenho em linhas finas e elegantes combinando um olho marcante
-        com cilios volumosos e um delineado bem definido, cruzado delicadamente por um pincel de maquiagem
-        na diagonal">
-        <h2>Meu primeiro post</h2>
-        <p>Por: Carol borges</p>
-        <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar conhecimentos de beleza e maquiagem</p>
-
-        <!-- Botão de Joinha -->
-        <button id="botao-like">👍 <span>0</span></button>
-
-        <!-- Botão de Coração -->
-        <button id="botao-heart">🩷​ <span>0</span></button>
+            <!-- Botões Post 2 -->
+            <button id="botao-like-2">👍 <span>0</span></button>
+            <button id="botao-heart-2">🩷​ <span>0</span></button>
+        </article>
     </main>
+
     <script>
-        // Seleciona o botão de joinha
-        const botaoLike = document.querySelector("#botao-like");
-        botaoLike.addEventListener("click", clicarLike);
-
-        function clicarLike() {
-            let texto = botaoLike.querySelector("span");
+        // Função genérica para incrementar contadores
+        function incrementarContador(botao) {
+            let texto = botao.querySelector("span");
             let contador = Number(texto.textContent);
             texto.textContent = contador + 1;
         }
 
-        // Seleciona o botão de coração
-        const botaoHeart = document.querySelector("#botao-heart");
-        botaoHeart.addEventListener("click", clicarHeart);
+        // Post 1
+        const botaoLike1 = document.querySelector("#botao-like-1");
+        botaoLike1.addEventListener("click", () => incrementarContador(botaoLike1));
 
-        function clicarHeart() {
-            let texto = botaoHeart.querySelector("span");
-            let contador = Number(texto.textContent);
-            texto.textContent = contador + 1;
-        }
+        const botaoHeart1 = document.querySelector("#botao-heart-1");
+        botaoHeart1.addEventListener("click", () => incrementarContador(botaoHeart1));
+
+        // Post 2
+        const botaoLike2 = document.querySelector("#botao-like-2");
+        botaoLike2.addEventListener("click", () => incrementarContador(botaoLike2));
+
+        const botaoHeart2 = document.querySelector("#botao-heart-2");
+        botaoHeart2.addEventListener("click", () => incrementarContador(botaoHeart2));
     </script>
 </body>
 
