@@ -92,7 +92,7 @@
         <!-- Segundo Post -->
         <article>
             <img src="imagem - blog.png" alt="No centro do circulo, um desenho em linhas finas e elegantes combinando um olho marcante com cilios volumosos e um delineado bem definido, cruzado delicadamente por um pincel de maquiagem na diagonal">
-            <h2>Meu segundo post</h2>
+            <h2>O ideal para cabelos lisos naturais ou com fonte de calor</h2>
             <p>Por: Carol borges</p>
             <p>Linha Elseve Liso dos Sonhos (ou Hidra Hyaluronico)
 Se a sua meta é manter os fios alinhados, protegidos contra o calor da chapinha ou secador e com aquela hidratação pesada, a linha com Ácido Hialurônico é excelente para preencher a fibra capilar e reter a umidade natural.
@@ -108,21 +108,21 @@ E vocês, já usam algum produto da Elseve na rotina de vocês? Qual é o seu pr
     </main>
 
     <script>
-        // Função genérica para incrementar contadores
+    
         function incrementarContador(botao) {
             let texto = botao.querySelector("span");
             let contador = Number(texto.textContent);
             texto.textContent = contador + 1;
         }
 
-        // Post 1
+       
         const botaoLike1 = document.querySelector("#botao-like-1");
         botaoLike1.addEventListener("click", () => incrementarContador(botaoLike1));
 
         const botaoHeart1 = document.querySelector("#botao-heart-1");
         botaoHeart1.addEventListener("click", () => incrementarContador(botaoHeart1));
 
-        // Post 2
+        
         const botaoLike2 = document.querySelector("#botao-like-2");
         botaoLike2.addEventListener("click", () => incrementarContador(botaoLike2));
 
