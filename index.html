@@ -5,68 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog de Maquiagem</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f4;
-            color: #333333;
-        }
-
-        header {
-            background-color: rgb(255, 0, 119);
-            color: white;
-            padding: 20px;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-            box-sizing: border-box;
-        }
-
-        .autor {
-            font-style: italic;
-            font-size: 0.95em;
-            margin-top: 5px;
-        }
-
-        main {
-            background-color: white;
-            color: #333333;
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 16px;
-            box-sizing: border-box;
-        }
-
-        img {
-            width: 80px;
-            height: 80px;
-        }
-
-        main h2 {
-            color: rgb(255, 0, 119);
-            margin-top: 0;
-        }
-
-        p {
-            font-weight: bold;
-        }
-
-        .artigo-autor {
-            font-weight: bold;
-        }
-
-        button {
-            cursor: pointer;
-            padding: 8px 16px;
-            font-size: 1rem;
-            background-color: #f0f0f0;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            margin-right: 8px;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
@@ -74,110 +13,48 @@
         <h1>Meu blog make</h1>
         <p>Vou compartilhar conhecimentos de beleza e maquiagem.</p>
     </header>
+
     <main>
-        <!-- Post 1 -->
+       
         <article>
-            <img src="imagem - blog.png" alt="No centro do círculo, um desenho em linhas finas e elegantes combinando um olho marcante com cílios volumosos e um delineado bem definido, cruzado delicadamente por um pincel de maquiagem na diagonal">
+            <img src="imagem - blog.png" alt="No centro do circulo, um desenho em linhas finas e elegantes combinando um olho marcante com cilios volumosos e um delineado bem definido, cruzado delicadamente por um pincel de maquiagem na diagonal">
             <h2>Meu primeiro post</h2>
-            <p class="artigo-autor">Por: Carol Borges</p>
-            <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar conhecimentos de beleza e maquiagem.</p>
+            <p>Por: Carol borges</p>
+            <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar conhecimentos de beleza e maquiagem</p>
 
             <button id="botao-like-1">👍 <span>0</span></button>
             <button id="botao-heart-1">🩷 <span>0</span></button>
         </article>
-        
-        <hr style="margin: 20px 0; border: 0; border-top: 1px solid #ccc;">
-
-        <!-- Post 2 -->
-        <article>
-            <img src="imagem - blog.png" alt="No centro do círculo, um desenho em linhas finas e elegantes combinando um olho marcante com cílios volumosos e um delineado bem definido, cruzado delicadamente por um pincel de maquiagem na diagonal">
-            <h2>Como fazer sua maquiagem durar o dia todo</h2>
-            <p class="artigo-autor">Por: Carol Borges</p>
-            <p>O segredo para a maquiagem durar o dia todo é preparar bem a pele limpando e hidratando com produtos leves, usar primer na zona T, aplicar bases de longa duração em camadas finas e finalizar selando o rosto com pó translúcido e spray fixador.</p>
-
-            <button id="botao-like-2">👍 <span>0</span></button>
-            <button id="botao-heart-2">🩷 <span>0</span></button>
-        </article>
 
         <hr style="margin: 20px 0; border: 0; border-top: 1px solid #ccc;">
 
-        <!-- Post 3 -->
+        <!-- Segundo Post -->
         <article>
-            <img src="imagem - blog.png" alt="No centro do círculo, um desenho em linhas finas e elegantes combinando um olho marcante com cílios volumosos e um delineado bem definido, cruzado delicadamente por um pincel de maquiagem na diagonal">
-            <h2>Como cuidar da sua extensão de cílios corretamente</h2>
-            <p class="artigo-autor">Por: Carol Borges</p>
-            <p>Para manter sua extensão de cílios bonita e com boa retenção, higienize os fios diariamente usando uma espuma de limpeza própria ou xampu infantil neutro. Lembre-se de penteá-los delicadamente com a escovinha apenas quando estiverem secos, evite esfregar a região e passe longe de produtos e demaquilantes à base de óleo, pois eles dissolvem a cola e fazem os fios caírem antes do tempo.</p>
-
-            <button id="botao-like-3">👍 <span>0</span></button>
-            <button id="botao-heart-3">🩷 <span>0</span></button>
-        </article>
-
-        <hr style="margin: 20px 0; border: 0; border-top: 1px solid #ccc;">
-
-        <!-- Post 4 -->
-        <article>
-            <img src="imagem - blog.png" alt="No centro do círculo, um desenho em linhas finas e elegantes combinando um olho marcante com cílios volumosos e um delineado bem definido, cruzado delicadamente por um pincel de maquiagem na diagonal">
-            <h2>A importância do skincare</h2>
-            <p class="artigo-autor">Por: Carol Borges</p>
-            <p>A prática diária de cuidar da pele do rosto vai muito além da estética, sendo um hábito essencial para a manutenção da saúde da pele. Ao longo do dia, o rosto fica exposto a diversos fatores externos, como poluição, radiação solar, poeira e variações de temperatura, que podem obstruir os poros, acelerar o envelhecimento precoce e causar desequilíbrios na hidratação natural. Uma rotina consistente de cuidados ajuda a remover essas impurezas acumuladas, fortalece a barreira de proteção cutânea e estimula a renovação celular, prevenindo o surgimento de acnes, manchas e sensibilidade. Além disso, dedicar alguns minutos a essa rotina diariamente funciona como um momento importante de autocuidado e conexão pessoal, promovendo não só uma pele mais viçosa e equilibrada, mas também uma sensação contínua de bem-estar.</p>
-
-            <button id="botao-like-4">👍 <span>0</span></button>
-            <button id="botao-heart-4">🩷 <span>0</span></button>
-        </article>
-
-        <hr style="margin: 20px 0; border: 0; border-top: 1px solid #ccc;">
-
-        <!-- Post 5 -->
-        <article>
-            <img src="imagem - blog.png" alt="No centro do círculo, um desenho em linhas finas e elegantes combinando um olho marcante com cílios volumosos e um delineado bem definido, cruzado delicadamente por um pincel de maquiagem na diagonal">
-            <h2>O ideal para cabelos lisos naturais ou com fonte de calor</h2>
-            <p class="artigo-autor">Por: Carol Borges</p>
-            <p>Se a sua meta é manter os fios alinhados, protegidos contra o calor da chapinha ou secador e com aquela hidratação pesada, a linha Elseve Liso dos Sonhos (ou Hidra Hialurônico) com Ácido Hialurônico é excelente para preencher a fibra capilar e reter a umidade natural.</p>
+            <img src="imagem - blog.png" alt="No centro do circulo, um desenho em linhas finas e elegantes combinando um olho marcante com cilios volumosos e um delineado bem definido, cruzado delicadamente por um pincel de maquiagem na diagonal">
+            <h2>Meu segundo post</h2>
+            <p>Por: Carol borges</p>
+            <p>Linha Elseve Liso dos Sonhos (ou Hidra Hyaluronico)</p>
+            <p>Se a sua meta é manter os fios alinhados, protegidos contra o calor da chapinha ou secador e com aquela hidratação pesada, a linha com Ácido Hialurônico é excelente para preencher a fibra capilar e reter a umidade natural.</p>
             <p>Cuidar do cabelo não precisa ser complicado nem caro. Testar combinações e descobrir o que funciona melhor para o seu tipo de fio faz parte do processo de se cuidar e se sentir bem consigo mesma.</p>
             <p>E vocês, já usam algum produto da Elseve na rotina de vocês? Qual é o seu preferido? Me contem nos comentários! ✨</p>
 
-            <button id="botao-like-5">👍 <span>0</span></button>
-            <button id="botao-heart-5">🩷 <span>0</span></button>
+            <!-- Botões Post 2 -->
+            <button id="botao-like-2">👍 <span>0</span></button>
+            <button id="botao-heart-2">🩷 <span>0</span></button>  
+        </article>
+
+        <article>
+            <img src="imagem - blog.png" alt="No centro do circulo, um desenho em linhas finas e elegantes combinando um olho marcante com cilios volumosos e um delineado bem definido, cruzado delicadamente por um pincel de maquiagem na diagonal">
+            <h2>Meu primeiro post</h2>
+            <p>Por: Carol borges</p>
+            <p>Boas-vindas ao meu novo blog! Aqui vou compartilhar conhecimentos de beleza e maquiagem</p>
+
+            <button id="botao-like-1">👍 <span>0</span></button>
+            <button id="botao-heart-1">🩷 <span>0</span></button>
         </article>
     </main>
 
-    <script>
-        function incrementarContador(botao) {
-            let texto = botao.querySelector("span");
-            let contador = Number(texto.textContent);
-            texto.textContent = contador + 1;
-        }
-
-        // Post 1
-        const botaoLike1 = document.querySelector("#botao-like-1");
-        botaoLike1.addEventListener("click", () => incrementarContador(botaoLike1));
-        const botaoHeart1 = document.querySelector("#botao-heart-1");
-        botaoHeart1.addEventListener("click", () => incrementarContador(botaoHeart1));
-
-        // Post 2
-        const botaoLike2 = document.querySelector("#botao-like-2");
-        botaoLike2.addEventListener("click", () => incrementarContador(botaoLike2));
-        const botaoHeart2 = document.querySelector("#botao-heart-2");
-        botaoHeart2.addEventListener("click", () => incrementarContador(botaoHeart2));
-
-        // Post 3
-        const botaoLike3 = document.querySelector("#botao-like-3");
-        botaoLike3.addEventListener("click", () => incrementarContador(botaoLike3));
-        const botaoHeart3 = document.querySelector("#botao-heart-3");
-        botaoHeart3.addEventListener("click", () => incrementarContador(botaoHeart3));
-
-        // Post 4
-        const botaoLike4 = document.querySelector("#botao-like-4");
-        botaoLike4.addEventListener("click", () => incrementarContador(botaoLike4));
-        const botaoHeart4 = document.querySelector("#botao-heart-4");
-        botaoHeart4.addEventListener("click", () => incrementarContador(botaoHeart4));
-
-        // Post 5
-        const botaoLike5 = document.querySelector("#botao-like-5");
-        botaoLike5.addEventListener("click", () => incrementarContador(botaoLike5));
-        const botaoHeart5 = document.querySelector("#botao-heart-5");
-        botaoHeart5.addEventListener("click", () => incrementarContador(botaoHeart5));
-    </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
